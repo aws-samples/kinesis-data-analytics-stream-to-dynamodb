@@ -1,15 +1,10 @@
-## My Project
+## Streaming data from KDA to DynamoDB Table
 
-TODO: Fill this README out!
+This Lambda/Python code will be invoked by an Amazon Kinesis Analytics application after it has seen all records associated with a particular row-time value.
+If records are emitted to the destination in-application stream with in the Kinesis Analytics application as a tumbling window, this means that this function is invoked per tumbling window trigger.
+If records are emitted to the destination in-application stream with in the Kinesis Analytics application as a continuous query or a sliding window, this means your Lambda function will be invoked approximately once per second.
 
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+This code will be used as part of a serverless analytics workshop and many of our AWS customers can reuse this code with minimal changes in production.
 
 ## License
 
