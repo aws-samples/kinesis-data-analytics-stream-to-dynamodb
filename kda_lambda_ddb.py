@@ -10,7 +10,6 @@
 #
 # A sample output record from Kinesis Analytics application for this function is as below
 # {    "RFID": 6989139522658,    "TollID: 179,    "Date-Month": "JAN",    "Date-Day": 27, "Date-Year": 2019,   "Vehicle_Type: "Car"}
-
 from __future__ import print_function
 import boto3
 import base64
